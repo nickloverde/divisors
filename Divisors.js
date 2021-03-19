@@ -16,3 +16,15 @@
 // So if the array is empty or equals 0 then I know it's a prime number and will return that string
 // else I'll return the array
 
+function divisors(integer) {
+    arr = [];
+     for (let i=2; i<integer; i++){
+      if (integer % i === 0){
+       arr.push(i);
+            }
+     } if (arr.length === 0) {
+            return `${integer} is prime`;
+        } else {
+            return arr;
+        }
+    }
